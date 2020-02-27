@@ -30,7 +30,7 @@ except Exception as ex:
 	sys.exit(1)
 try: 
 	PipelineNotification.PipelineNotification().started_notification('5e57b946515f80e674efc3c4','5df78f4be2f2eff24740bbd7','http://13.68.212.36:3200/pipeline/notify')
-	BostonHousing_AutoML = tpot_execution.Tpot_execution.run(["5e57b946515f80e674efc3c3"],{"5e57b946515f80e674efc3c3": BostonHousing_AutoFE}, "5e57b946515f80e674efc3c4", spark,json.dumps( {"model_type": "regression", "label": "MEDV", "features": ["CRIM", "ZN", "INDUS", "CHAS", "NOX", "RM", "AGE", "DIS", "RAD", "TAX", "PTRATIO", "B", "LSTAT"], "percentage": "60", "executionTime": 45, "sampling": "0", "sampling_value": "", "run_id": "", "ProjectName": "ML Sample Problems", "PipelineName": "BostonHousing", "userid": "5df78f4be2f2eff24740bbd7", "runid": "", "url_ResultView": "http://13.68.212.36:3200", "experiment_id": "480623611921769"}))
+	BostonHousing_AutoML = tpot_execution.Tpot_execution.run(["5e57b946515f80e674efc3c3"],{"5e57b946515f80e674efc3c3": BostonHousing_AutoFE}, "5e57b946515f80e674efc3c4", spark,json.dumps( {"model_type": "regression", "label": "MEDV", "features": ["CRIM", "ZN", "INDUS", "CHAS", "NOX", "RM", "AGE", "DIS", "RAD", "TAX", "PTRATIO", "B", "LSTAT"], "percentage": "50", "executionTime": 45, "sampling": "0", "sampling_value": "", "run_id": "", "ProjectName": "ML Sample Problems", "PipelineName": "BostonHousing", "userid": "5df78f4be2f2eff24740bbd7", "runid": "", "url_ResultView": "http://13.68.212.36:3200", "experiment_id": "480623611921769"}))
 
 	PipelineNotification.PipelineNotification().completed_notification('5e57b946515f80e674efc3c4','5df78f4be2f2eff24740bbd7','http://13.68.212.36:3200/pipeline/notify')
 except Exception as ex: 
